@@ -1,5 +1,7 @@
 ## Overview
 
+Took just under 2 hours.
+
 I really enjoyed making this! Fairly happy with the result but would have liked to make it look a bit more refined.
 
 Only real challenge was getting the modal to work - initially I had a separate Model component but it wouldn't let me render it using the parent's (Giph) state as a condition. Kept the two parts together and it now works as expected.
