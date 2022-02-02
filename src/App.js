@@ -5,7 +5,7 @@ import { fetchGiphs } from './API';
 import './App.css';
 
 function App() {
-  const [query, updateQuery] = useState();
+  const [query, updateQuery] = useState('');
 
   const [page, setPage] = useState(1);
 
