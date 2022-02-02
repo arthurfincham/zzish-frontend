@@ -14,9 +14,13 @@ export default function PagePicker({ page, handlePageChange }) {
   };
   return (
     <div className='page-picker'>
-      <button onClick={() => handleDecrease()}>&#60;</button>
+      <button onClick={() => handleDecrease()}>
+        <p>&#60;</p>
+      </button>
       <span>Page {page} of 10</span>
-      <button onClick={() => handleIncrease()}>&#62;</button>
+      <button onClick={() => handleIncrease()}>
+        <p>&#62;</p>
+      </button>
     </div>
   );
 }
