@@ -4,8 +4,8 @@ export default function GiphMosaic({ giphs }) {
   return (
     <div className='giph-mosaic'>
       <div className='giph-mosaic-wrapper'>
-        {giphs.map((giph) => {
-          return <Giph giph={giph} />;
+        {giphs.map((giph, index) => {
+          return <Giph key={index} giph={giph} />;
         })}
       </div>
     </div>
