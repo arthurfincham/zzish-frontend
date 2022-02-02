@@ -1,16 +1,10 @@
 import React from 'react';
-
+import Giph from './Giph';
 export default function GiphMosaic({ giphs }) {
   return (
     <div className='giph-mosaic'>
       {giphs.map((giph) => {
-        return (
-          <img
-            src={giph.images.fixed_height.url}
-            width={giph.images.fixed_height.url}
-            height={giph.images.fixed_width.height}
-          />
-        );
+        return <Giph giph={giph} />;
       })}
     </div>
   );
