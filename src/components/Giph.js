@@ -9,17 +9,19 @@ export default function Giph({ giph }) {
 
   const modal = (
     <div className='modal'>
-      <button
-        className='modal-close-button'
-        onClick={() => setShowModal(false)}
-      >
-        CLOSE
-      </button>
-      <img
-        src={giph.images.original.url}
-        width={giph.images.original.width}
-        height={giph.images.original.height}
-      />
+      <div className='modal-button-giph'>
+        <button
+          className='modal-close-button'
+          onClick={() => setShowModal(false)}
+        >
+          CLOSE
+        </button>
+        <img
+          src={giph.images.original.url}
+          width={giph.images.original.width}
+          height={giph.images.original.height}
+        />
+      </div>
       <div className='modal-info'>
         <p>Title: {giph.title}</p>
         <p>Author: {giph.username ? giph.username : 'Unknown'}</p>
