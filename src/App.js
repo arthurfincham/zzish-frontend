@@ -24,10 +24,14 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Giphy Search</h1>
-      <SearchBox query={query} handleTyping={handleTyping} />
+      <nav>
+        <h1>Giphy Search</h1>
+        <SearchBox query={query} handleTyping={handleTyping} />
+      </nav>
       <GiphMosaic giphs={giphs} />
-      <PagePicker page={page} handlePageChange={handlePageChange} />
+      <footer>
+        <PagePicker page={page} handlePageChange={handlePageChange} />
+      </footer>
     </div>
   );
 }
