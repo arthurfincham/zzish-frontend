@@ -7,3 +7,5 @@ Create pagination with state handled value.
 Again, I should be able to pass this to the API as an offset to reduce calls.
 
 Will limit pagination to 10 pages of 10 gifs for now.
+
+Add handleClick functions to pagination buttons so that it cannot exceed range of 1-10
