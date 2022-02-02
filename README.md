@@ -8,7 +8,7 @@ Took just under 2 hours.
 
 I really enjoyed making this! Fairly happy with the result but would have liked to make it look a bit more refined.
 
-Only real challenge was getting the modal to work - initially I had a separate Model component but it wouldn't let me render it using the parent's (Giph) state as a condition. Kept the two parts together and it now works as expected.
+Only real challenge was getting the modal to work - initially I had a separate Modal component but it wouldn't let me render it using the parent's (Giph) state as a condition. Kept the two parts together and it now works as expected.
 
 If I had more time I'd have done some nicer styling and perhaps added a skeleton for loading - when clicking through pages the gifs can take a moment to render... a skeleton would be nice there!
 
