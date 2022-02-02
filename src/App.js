@@ -14,15 +14,17 @@ function App() {
 
   const handleTyping = (e) => {
     updateQuery(e);
-    fetchGiphs(page, query, updateGiphs);
+    fetchGiphs(query, page, updateGiphs);
   };
 
   const handlePageChange = (direction) => {
     setPage(page + direction);
+    fetchGiphs(query, page, updateGiphs);
   };
 
   return (
     <div className='App'>
+      <h1>Giphy Search</h1>
       <SearchBox query={query} handleTyping={handleTyping} />
       <GiphMosaic giphs={giphs} />
       <PagePicker page={page} handlePageChange={handlePageChange} />
