@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SearchBox from './components/SearchBox';
+import PagePicker from './components/PagePicker';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className='App'>
       <SearchBox query={query} handleTyping={handleTyping} />
+      <PagePicker page={page} handlePageChange={handlePageChange} />
     </div>
   );
 }
