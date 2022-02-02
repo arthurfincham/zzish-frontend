@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SearchBox from './components/SearchBox';
 import PagePicker from './components/PagePicker';
+import GiphMosaic from './components/GiphMosaic';
 import { fetchGiphs } from './API';
 import './App.css';
 
@@ -23,6 +24,7 @@ function App() {
   return (
     <div className='App'>
       <SearchBox query={query} handleTyping={handleTyping} />
+      <GiphMosaic giphs={giphs} />
       <PagePicker page={page} handlePageChange={handlePageChange} />
     </div>
   );
